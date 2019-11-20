@@ -22,7 +22,21 @@ public class MaxInStructArray {
 		 * heights. So, 25 is the maximum height.
 		 */
 		
+		//int[] input = {1,2,2,1};
+		int[] input = {3,5,7,9,5,6,5,5};
+		int max = 0;
 		 
+		for(int i=0; i < input.length; i=i+2) {
+			
+			int height = input[i]*12 + input[i+1];
+			//System.out.println("Height: "+height);
+			
+			if(height>=max) {
+				max=height;
+				//System.out.println(max);
+			}
+		}
+		System.out.println(max);
 	}
 
 }
