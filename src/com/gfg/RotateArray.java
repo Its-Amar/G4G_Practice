@@ -6,13 +6,13 @@ public class RotateArray {
 
 	public static void main(String[] args) {
 		
-		int[] arr = {1,2,3,4,5};
+		int[] arr = {1,2,3,4,5,6,7,8,9,10};
 		int elements = arr.length;
-		int rotation = 2;
+		int rotation = 3;
 		int[] newArr = new int[elements];
 		int j=0;
 		int l=0;
-		for(int i = 2; i<elements; i++) {
+		for(int i = rotation; i<elements; i++) {
 			
 			newArr[j] = arr[i];
 			j++;
